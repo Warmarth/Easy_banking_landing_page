@@ -5,6 +5,9 @@ function Header() {
   return (
     <header>
       <div>
+        
+      </div>
+      <nav>
         <ul className="nav-links text-3xl font-bold">
           <li>
             <a href="#index.html">user</a>
@@ -20,7 +23,7 @@ function Header() {
             <a href="#contact.html">about us</a>
           </li>
         </ul>
-      </div>
+      </nav>
     </header>
   );
 }
