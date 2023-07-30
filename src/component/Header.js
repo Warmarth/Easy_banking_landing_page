@@ -1,5 +1,5 @@
 import React from "react";
-import "../App.css"
+import "../App.css";
 
 function Footer() {
   return (
@@ -19,12 +19,6 @@ function Footer() {
           <li>
             <a href="#contact.html">about us</a>
           </li>
-          <select className="nav-btn btn" id="nav-btn">
-            menufg
-            <option>
-              <a href="#index.html">user</a>
-            </option>
-          </select>
         </ul>
       </div>
     </header>

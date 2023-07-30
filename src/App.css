@@ -1,8 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 ul {
   display: flex;
+  background-color: aquamarine;
   justify-content: center;
   list-style-type: none;
 }
