@@ -1,10 +1,12 @@
 import React from "react";
-import Footer from "./component/Header";
+import Body from "./component/Mainbody";
+import Header from "./component/Header";
 
 function App() {
   return (
     <div className=" App">
-      <Footer />
+      <Header />
+      <Body />
     </div>
   );
 }
