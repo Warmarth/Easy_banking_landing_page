@@ -5,22 +5,22 @@ import logo from "../Asset/logo.svg";
 
 function Header() {
   return (
-    <header className="bg-gray-400 text-center animation">
+    <header className="bg-slate-100 text-center animation">
       <nav className=" navBar items-center justify-between p-4 sm:block md:flex cursor-pointer xl:w-10/12 xl:m-auto">
         <div className="flex justify-center">
           <img src={logo} alt="Logo" className="min-w-min self-center" />
         </div>
-        <ul className="nav-links text-md font-bold capitalize block md:flex  mb-4 mt-4 md:m-2">
-          <li className="hover:bg-blue-300 p-2 hover:rounded-xl animation">
+        <ul className="nav-links text-md  capitalize block md:flex  mb-4 mt-4 md:m-2">
+          <li className="hover:bg-blue-300 p-2 hover:rounded-xl hover:font-bold animation">
             <a href="#index.html ">user</a>
           </li>
-          <li className="hover:bg-blue-300 p-2 hover:rounded-xl">
+          <li className="hover:bg-blue-300 p-2 hover:rounded-xl hover:font-bold">
             <a href="#about.html">dashbord</a>
           </li>
-          <li className="hover:bg-blue-300 p-2 hover:rounded-xl">
+          <li className="hover:bg-blue-300 p-2 hover:rounded-xl hover:font-bold">
             <a href="#products.html">delivery</a>
           </li>
-          <li className="hover:bg-blue-300 p-2 hover:rounded-xl">
+          <li className="hover:bg-blue-300 p-2 hover:rounded-xl hover:font-bold">
             <a href="#contact.html">about us</a>
           </li>
         </ul>
