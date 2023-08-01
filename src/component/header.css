@@ -1,0 +1,8 @@
+/* for header styling */
+ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+
