@@ -5,8 +5,15 @@ import background from "../Asset/img_2.jpg";
 const Mainbody = () => {
   return (
     <section>
-      <div className=" flex flex-col-reverse lg:flex-col-reverse justify-between ">
-        <div className="flex items-center lg:ml-24 my-8 mr-4">
+      <div className=" block lg:flex lg:flex-row-reverse justify-between transition">
+        <div className=" ">
+          <img
+            src={background}
+            alt=""
+            className="background rounded-bl-xl w-full  border-green-400"
+          />
+        </div>
+        <div className="flex items-center lg:ml-24 my-8 mr-8">
           <article
             className="max-w-md text-center lg:text-left m-auto
           my-4 p-2"
@@ -27,13 +34,6 @@ const Mainbody = () => {
               Request invite
             </button>
           </article>
-        </div>
-        <div className=" ">
-          <img
-            src={background}
-            alt=""
-            className="background rounded-bl-xl border-green-400"
-          />
         </div>
       </div>
     </section>
