@@ -17,8 +17,18 @@
   display: block;
   width: 4rem;
   height: 4rem;
-  color: #fff;
   font-size: 1.4rem;
   background-color: rgb(28, 218, 101);
   border-radius: 50%;
+}
+
+svg{
+  color: #fff;
+}
+svg:hover{
+  color: green;
+}
+.menu{
+  font-size: 1.5rem;
+  border-radius: 4px;
 }
