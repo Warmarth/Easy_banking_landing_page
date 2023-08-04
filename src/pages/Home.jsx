@@ -1,6 +1,6 @@
 import React from "react";
-import Body from "../component/Header";
 import Header from "../component/Header";
+import Body from "../component/Mainbody";
 import Body2 from "../component/MainBody_2";
 import Body3 from "../component/Mainbody_3";
 import Footer from "../component/Footer";
@@ -8,7 +8,7 @@ import Footer from "../component/Footer";
 function HomePage() {
   return (
     <div className=" App">
-      <Header />
+      <Header/>
       <Body />
       <Body2 />
       <Body3 />

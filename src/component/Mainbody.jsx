@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-import background from "../Asset/img-5.jpg";
+import background from "../Asset/img-1.svg";
 
 const Mainbody = () => {
   return (

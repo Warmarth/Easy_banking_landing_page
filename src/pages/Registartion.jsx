@@ -11,5 +11,4 @@ function Registartion() {
   );
 }
 
-
-
+export default Registartion;

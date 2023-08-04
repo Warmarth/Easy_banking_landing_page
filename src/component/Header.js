@@ -26,7 +26,7 @@ function Header() {
         {MenuOpen && <Menu />}
         <ul className="nav-links text-md hidden capitalize block md:flex md:items-center mb-4 mt-4 md:m-2">
           <li className="hover:bg-green-100 md:hover:border-green-200 p-2 hover:rounded-xl hover:font-bold animation">
-            <a href="#index.html ">user</a>
+            <a href="#about.html">user</a>
           </li>
           <li className="hover:bg-green-100 p-2 hover:rounded-xl hover:font-bold">
             <a href="#about.html">dashbord</a>
