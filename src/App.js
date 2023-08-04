@@ -49,6 +49,7 @@ function PostLists() {
       {Object.entries(BlogPosts).map(([slug, { title }]) => (
         <li key={slug}>
           <Link to={`/posts/${slug}`}>
+            <br/>
             <h3>{title}</h3>
           </Link>
         </li>
