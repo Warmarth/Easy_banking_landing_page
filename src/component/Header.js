@@ -37,9 +37,6 @@ function Header() {
           <li className="hover:bg-green-100 p-2 hover:rounded-xl hover:font-bold">
             <a href="#contact.html">about us</a>
           </li>
-          <li className="hover:bg-green-100 p-2 hover:rounded-xl hover:font-bold">
-            <a href="signup.html">sign up</a>
-          </li>
         </ul>
         <button className="bg-green-400 hover:bg-green-600 rounded-xl p-2 hover:scale-105 transition hover:font-bold capitalize hidden md:flex ">
           request invite

@@ -22,7 +22,7 @@ class Footer extends Component {
                   src={logo}
                   alt=""
                   srcset=""
-                  className="footer_logo text-white-200"
+                  className="footer_logo bg-slate-300"
                 />
               </div>
               <div className=" flex justify-center items-center ">

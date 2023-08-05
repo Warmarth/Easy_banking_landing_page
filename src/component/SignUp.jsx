@@ -8,7 +8,7 @@ const SignUp = () => {
         <p className="text-center text-2xl pb-4">Welcome to Easybank</p>
         <div className="">
           <form action="" method="post">
-            <fieldset className="p-12 border rounded-2xl m-auto block mb-8 w-4/6">
+            <fieldset className="p-12 border rounded-2xl mx-auto block mb-8 w-4/6">
               <legend className="font-bold text-lg capitalize ">
                 Your personal information
               </legend>
@@ -94,8 +94,8 @@ const SignUp = () => {
               </div>
             </fieldset>
             {/* comments */}
-            <fieldset className="p-12 border m-auto block mb-8 w-4/6">
-              <legend className="font-bold text-lg">Your comment</legend>
+            <fieldset className="p-12 border rounded-2xl mx-auto block w-4/6">
+              <legend className="font-bold text-lg capitalize">Your comment</legend>
               <div className="form-group py-2 space-x-2 font-bold">
                 <label htmlFor="your-title">Title</label>
                 <div className="form-field">
