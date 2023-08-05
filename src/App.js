@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -7,7 +7,7 @@ import {
   Outlet,
   Navigate,
   useParams,
-  useNavigate
+  useNavigate,
 } from "react-router-dom";
 import HomePage from "./pages/Home";
 import Registartion from "./pages/Registartion";
@@ -15,6 +15,8 @@ import Port404 from "./pages/NoMatch";
 import LogIn from "./pages/logIn";
 import Post from "./pages/post";
 import PostLists from "./pages/postLists";
+import AppLayout from "./AppLayout";
+import Stats from "./pages/Stat";
 
 const BlogPosts = {
   "first-blog-post": {
@@ -36,43 +38,6 @@ function Posts() {
   );
 }
 
-function Login({ onLogin }) {
-  const [creds, setCreds] = useState({});
-  const navigate = useNavigate();
-
-  function handleLogin() {
-    // For demonstration purposes only. Never use these checks in production!
-    // Use a proper authentication implementation
-    if (creds.username === "admin" && creds.password === "123") {
-      onLogin && onLogin({ username: creds.username });
-      navigate("/stats");
-    }
-  }
-  return (
-    <div style={{ padding: 10 }}>
-      <br />
-      <span>Username:</span>
-      <br />
-      <input
-        type="text"
-        onChange={(e) => setCreds({ ...creds, username: e.target.value })}
-      />
-      <br />
-      <span>Password:</span>
-      <br />
-      <input
-        type="password"
-        onChange={(e) => setCreds({ ...creds, password: e.target.value })}
-      />
-      <br />
-      <br />
-      <button onClick={handleLogin}>Login</button>
-    </div>
-  );
-}
-
-
-
 function App() {
   return (
     <Router>
@@ -80,6 +45,7 @@ function App() {
       <Link to="/signup"> Sign Up </Link>
       <Link to="/posts">Post </Link>
       <Link to="/login">LogIn</Link>
+      <Link to="/stat">stat</Link>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/posts" element={<Posts />}>
@@ -89,10 +55,12 @@ function App() {
         <Route path="/login" element={<LogIn />} />
         <Route path="/signup" element={<Registartion />} />
         <Route path="*" element={<Port404 />} />
+        <Route path="/applayout" element={<AppLayout />} />
+        <Route path="/stat" element={<Stats />} />
       </Routes>
     </Router>
   );
 }
 
-export {BlogPosts}
+export { BlogPosts };
 export default App;
