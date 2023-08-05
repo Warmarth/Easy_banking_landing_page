@@ -52,7 +52,7 @@ const Mainbody_3 = () => {
               <img src={Latest2} alt="" className=" rounded-t-xl " />
             </div>
             <article className="pl-12 pt-6 mr-4 mb-4 ">
-              <blockquote className="capitalize text-sm font-mono py-2 mb-1">
+              <blockquote classNameNameName="capitalize text-sm font-mono py-2 mb-1">
                 by Hutton Robinson{" "}
               </blockquote>
               <h1 className="font-bold ">
