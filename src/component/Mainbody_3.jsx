@@ -13,8 +13,8 @@ const Mainbody_3 = () => {
           <h2 className="text-5xl text-center capitalize">latest articles</h2>
         </div>
         <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-4 transition gap-x-2">
-          <div className="mb-6 p-2">
-            <div className="px-6 ">
+          <div className="mb-6 mx-6  bg-slate-100">
+            <div className="">
               <img src={Latest} alt="" className=" rounded-t-xl " />
             </div>
             <article className="pl-12 pt-6 mr-4 mb-4 ">
@@ -30,8 +30,8 @@ const Mainbody_3 = () => {
               </p>
             </article>
           </div>
-          <div className="mb-6 p-2">
-            <div className="px-6">
+          <div className="mb-6 mx-6  bg-slate-100">
+            <div className="">
               <img src={Latest1} alt="" className=" rounded-t-xl " />
             </div>
             <article className=" pl-12 pt-6 mr-4 mb-4 ">
@@ -43,20 +43,20 @@ const Mainbody_3 = () => {
               </h1>
               <p className=" pt-2 mt-2">
                 the world is getting smaller and we're becoming more mobile. So
-                why should you be forced to only receive money in a single
+                why should you be forced to only receive money in a single way.
               </p>
             </article>
           </div>
-          <div className="mb-6 p-2">
-            <div className="px-6">
+          <div className="mb-6 mx-6  bg-slate-100">
+            <div className=" ">
               <img src={Latest2} alt="" className=" rounded-t-xl " />
             </div>
             <article className="pl-12 pt-6 mr-4 mb-4 ">
-              <blockquote classNameNameName="capitalize text-sm font-mono py-2 mb-1">
-                by Hutton Robinson{" "}
+              <blockquote className="capitalize text-sm font-mono py-2 mb-1">
+                by claire Robinson{" "}
               </blockquote>
               <h1 className="font-bold ">
-                Take your Easybank card wherever you go
+                Our invite-only Beta account are now live!
               </h1>
               <p className=" pt-2 mt-2">
                 the world is getting smaller and we're becoming more mobile. So
@@ -64,11 +64,11 @@ const Mainbody_3 = () => {
               </p>
             </article>
           </div>
-          <div className="mb-6 p-2">
-            <div className="px-6">
+          <div className="mb-6 mx-6  bg-slate-100">
+            <div className="">
               <img src={Latest3} alt="" className=" rounded-t-xl " />
             </div>
-            <article className="pl-12 pt-6 mr-4 mb-4 ">
+            <article className="pl-8 pt-6 mr-4 mb-4 ">
               <blockquote className="capitalize text-sm font-mono py-2 mb-1">
                 by Wilson Hutton{" "}
               </blockquote>

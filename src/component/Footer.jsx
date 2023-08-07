@@ -43,22 +43,24 @@ class Footer extends Component {
                 </span>
               </div>
             </div>
-            <ul className="nav-links text-md  capitalize block  mt-4 ">
-              <li className=" hover:text-green-600 p-2 hover:rounded-xl hover:font-bold">
-                <a href="#index.html ">user</a>
-              </li>
-              <li className=" hover:text-green-600 p-2 hover:rounded-xl hover:font-bold">
-                <a href="#about.html">dashbord</a>
-              </li>
-            </ul>
-            <ul className="nav-links text-md  capitalize block mb-4 md:mt-4 ">
-              <li className="hover:text-green-600 p-2 hover:rounded-xl hover:font-bold">
-                <a href="#products.html">delivery</a>
-              </li>
-              <li className=" hover:text-green-600 p-2 hover:rounded-xl hover:font-bold">
-                <a href="#contact.html">about us</a>
-              </li>
-            </ul>
+            <div className="grid item-center lg:grid-cols-2 lg:ml-12 justify-center">
+              <ul className="nav-links text-md  capitalize block  mt-4 ">
+                <li className=" hover:text-green-600 p-2 hover:rounded-xl hover:font-bold">
+                  <a href="#index.html ">user</a>
+                </li>
+                <li className=" hover:text-green-600 p-2 hover:rounded-xl hover:font-bold">
+                  <a href="#about.html">dashbord</a>
+                </li>
+              </ul>
+              <ul className="nav-links text-md  capitalize block mb-4 lg:mt-4">
+                <li className="hover:text-green-600 p-2 hover:rounded-xl hover:font-bold">
+                  <a href="#products.html">delivery</a>
+                </li>
+                <li className=" hover:text-green-600 p-2 hover:rounded-xl hover:font-bold">
+                  <a href="#contact.html">about us</a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div className=" ">
             <button className="bg-green-400 hover:bg-green-600 rounded-3xl  p-4 px-6 mt-12 lg:mt-0  mb-4 hover:scale-105 transition text-xl capitalize font-bold ">

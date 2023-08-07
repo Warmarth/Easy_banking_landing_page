@@ -1,4 +1,3 @@
-// Login.js
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -7,11 +6,9 @@ function Login({ onLogin }) {
   const navigate = useNavigate();
 
   function handleLogin() {
-    // For demonstration purposes only. Never use these checks in production!
-    // Use a proper authentication implementation
     if (creds.username === "admin" && creds.password === "123") {
       onLogin && onLogin({ username: creds.username });
-      navigate("/stats");
+      navigate("/");
     }
   }
 

@@ -6,7 +6,7 @@ function Stats({ user }) {
     return <Navigate to="/login" replace />;
   }
   return (
-    <div style={{ padding: 20 }}>
+    <div className="py-2 space-x-2 font-bold">
       <h2>Stats View</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adip.</p>
     </div>

@@ -1,13 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   Link,
   Outlet,
-  Navigate,
-  useParams,
-  useNavigate,
 } from "react-router-dom";
 import HomePage from "./pages/Home";
 import Registartion from "./pages/Registartion";
@@ -40,7 +37,7 @@ function Posts() {
 
 function App() {
   return (
-    <Router>
+    <Router className="bg-400-red">
       <Link to="/">Home</Link>
       <Link to="/signup"> Sign Up </Link>
       <Link to="/posts">Post </Link>

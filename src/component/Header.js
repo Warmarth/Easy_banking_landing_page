@@ -1,9 +1,13 @@
 import { React, useState } from "react";
 import Menu from "./dbList";
+import { Link } from "react-router-dom";
 import "../App.css";
 import "./header.css";
 import logo from "../Asset/logo.svg";
 import { CgMenuGridO, CgClose } from "react-icons/cg";
+import Mainbody from "./Mainbody";
+import Mainbody_2 from "./MainBody_2";
+import Mainbody_3 from "./Mainbody_3";
 
 function Header() {
   const [MenuOpen, setIsMenuOpen] = useState(false);
@@ -28,14 +32,14 @@ function Header() {
           <li className="hover:bg-green-100 md:hover:border-green-200 p-2 hover:rounded-xl hover:font-bold animation">
             <a href="#about.html">user</a>
           </li>
-          <li className="hover:bg-green-100 p-2 hover:rounded-xl hover:font-bold">
-            <a href="#about.html">dashbord</a>
+          <li to="/Mainbody" className="hover:bg-green-100 p-2 hover:rounded-xl hover:font-bold">
+            <Link to={Mainbody_2}>dashbord</Link>
           </li>
           <li className="hover:bg-green-100  p-2 hover:rounded-xl hover:font-bold">
-            <a href="#products.html">delivery</a>
+            <Link to={Mainbody}>delivery</Link>
           </li>
           <li className="hover:bg-green-100 p-2 hover:rounded-xl hover:font-bold">
-            <a href="#contact.html">about us</a>
+            <Link to={Mainbody_3}>about us</Link>
           </li>
         </ul>
         <button className="bg-green-400 hover:bg-green-600 rounded-xl p-2 hover:scale-105 transition hover:font-bold capitalize hidden md:flex ">
