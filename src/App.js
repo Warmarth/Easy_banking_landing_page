@@ -3,7 +3,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link,
+  // Link,
   Outlet,
 } from "react-router-dom";
 import HomePage from "./pages/Home";
@@ -38,11 +38,11 @@ function Posts() {
 function App() {
   return (
     <Router className="bg-400-red">
-      <Link to="/">Home</Link>
-      <Link to="/signup"> Sign Up </Link>
+      {/* <Link to="/">Home</Link>
+      <Link to="/signup"> Sign-Up </Link>
       <Link to="/posts">Post </Link>
-      <Link to="/login">LogIn</Link>
-      <Link to="/stat">stat</Link>
+      <Link to="/login">LogIn </Link>
+      <Link to="/stat">Stat</Link> */}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/posts" element={<Posts />}>

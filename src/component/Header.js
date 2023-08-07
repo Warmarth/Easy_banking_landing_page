@@ -27,18 +27,19 @@ function Header() {
             {MenuOpen ? <CgClose className="text-red-800" /> : <CgMenuGridO />}
           </button>
         </div>
-        {MenuOpen && <Menu />}
-        <ul className="nav-links text-md hidden capitalize block md:flex md:items-center mb-4 mt-4 md:m-2">
-          <li className="hover:bg-green-100 md:hover:border-green-200 p-2 hover:rounded-xl hover:font-bold animation">
+        <ul className="nav-links text-md hidden capitalize block md:flex md:items-center justify-between space-x-4 mb-4 mt-4 md:m-2">
+          <li className="hover:border-b-green-900 mx-1 border-b-2   hover:font-bold ">
             <a href="#about.html">user</a>
           </li>
-          <li to="/Mainbody" className="hover:bg-green-100 p-2 hover:rounded-xl hover:font-bold">
+          <li
+            className="hover:border-b-green-900 mx-1 border-b-2   hover:font-bold"
+          >
             <Link to={Mainbody_2}>dashbord</Link>
           </li>
-          <li className="hover:bg-green-100  p-2 hover:rounded-xl hover:font-bold">
-            <Link to={Mainbody}>delivery</Link>
+          <li className="hover:border-b-green-900 mx-1  border-b-2   hover:font-bold">
+            <Link to={Mainbody} className="">delivery</Link>
           </li>
-          <li className="hover:bg-green-100 p-2 hover:rounded-xl hover:font-bold">
+          <li className="hover:border-b-green-900 mx-1 border-b-2 hover:font-bold">
             <Link to={Mainbody_3}>about us</Link>
           </li>
         </ul>
@@ -46,6 +47,7 @@ function Header() {
           request invite
         </button>
       </nav>
+      {MenuOpen && <Menu />}
     </header>
   );
 }
