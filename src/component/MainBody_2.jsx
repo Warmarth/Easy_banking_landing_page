@@ -14,7 +14,7 @@ const Mainbody_2 = () => {
         <div className=" mb-24">
           <h1 className="mb-4 text-5xl">why choose Easybank?</h1>
           <p className=" w-5/6 ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+            Lore ipsum dolor sit amet consectetur adipisicing elit. Quidem
             maiores nemo esse sapiente ipsum. Nostrum, molestiae.
           </p>
         </div>

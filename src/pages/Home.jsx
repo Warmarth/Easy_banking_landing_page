@@ -8,7 +8,7 @@ import Footer from "../component/Footer";
 function HomePage() {
   return (
     <div className=" App">
-      <Header/>
+      <Header />
       <Body />
       <Body2 />
       <Body3 />
