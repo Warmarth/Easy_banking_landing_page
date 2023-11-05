@@ -1,12 +1,7 @@
 import { React, Component } from "react";
 import logo from "../Asset/logo.svg";
-import {
-  FaFacebook,
-  FaTwitter,
-  FaPinterestP,
-  FaSquareYoutube,
-  FaInstagram,
-} from "react-icons/fa6";
+import { menuList } from "./data";
+import { footerContent } from "./data";
 import "../App.css";
 
 class Footer extends Component {
@@ -17,49 +12,33 @@ class Footer extends Component {
           <div className="lg:grid grid-cols-3 justify-around lg:px-12">
             <div className=" ">
               <div className="flex justify-center mb-12 h-8 ">
-                {" "}
-                <img
-                  src={logo}
-                  alt=""
-                  srcset=""
-                  className="footer_logo bg-slate-300"
-                />
+                <img src={logo} alt="" className="footer_logo bg-slate-300" />
               </div>
               <div className=" flex justify-center items-center ">
-                <span className="text-yellow-400 text-5xl mr-6">
-                  <FaFacebook />
-                </span>
-                <span className="text-yellow-400 text-5xl mr-6">
-                  <FaTwitter />
-                </span>
-                <span className="text-yellow-400 text-5xl mr-6">
-                  <FaPinterestP />
-                </span>
-                <span className="text-yellow-400 text-5xl mr-6">
-                  <FaSquareYoutube />
-                </span>
-                <span className="text-yellow-400 text-5xl mr-6">
-                  <FaInstagram />
-                </span>
+                {footerContent.icon.map((items, idx) => {
+                  return (
+                    <span className="text-yellow-400 text-5xl mr-6" key={idx}>
+                      {items}
+                    </span>
+                  );
+                })}
               </div>
             </div>
             <div className="grid item-center lg:grid-cols-2 lg:ml-12 justify-center">
-              <ul className="nav-links text-md  capitalize block  mt-4 ">
-                <li className=" hover:text-green-600 p-2 hover:rounded-xl hover:font-bold">
-                  <a href="#index.html ">user</a>
-                </li>
-                <li className=" hover:text-green-600 p-2 hover:rounded-xl hover:font-bold">
-                  <a href="#about.html">dashbord</a>
-                </li>
-              </ul>
-              <ul className="nav-links text-md  capitalize block mb-4 lg:mt-4">
-                <li className="hover:text-green-600 p-2 hover:rounded-xl hover:font-bold">
-                  <a href="#products.html">delivery</a>
-                </li>
-                <li className=" hover:text-green-600 p-2 hover:rounded-xl hover:font-bold">
-                  <a href="#contact.html">about us</a>
-                </li>
-              </ul>
+              {menuList.map((item, idx) => {
+                return (
+                  <ul
+                    className="nav-links text-md  capitalize block  mt-4 "
+                    key={idx}
+                  >
+                    <li
+                      className={`hover:text-green-600 p-2 hover:rounded-xl hover:font-bold`}
+                    >
+                      <a href="#index.html ">{item}</a>
+                    </li>
+                  </ul>
+                );
+              })}
             </div>
           </div>
           <div className=" ">
@@ -67,7 +46,7 @@ class Footer extends Component {
               request invite
             </button>
             <p className="capitalize pt-4 text-xl">
-              &copy; easybank. all rights reserved{" "}
+              &copy; easybank. all rights reserved
             </p>
           </div>
         </div>

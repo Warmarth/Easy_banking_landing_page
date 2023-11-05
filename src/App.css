@@ -6,14 +6,26 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  /* primary colors */
+  --primary-grayishBlue: hsl(233, 26%, 24%);
+  --primary-limeGreen: hsl(136, 65%, 51%);
+  --primary-brightCyan: hsl(192, 70%, 51%);
+
+  /* neutral colors */
+  --neutral-Grayish-blue: hsl(233, 8%, 62%);
+  --neutral-light-Grayish-blue: hsl(220, 16%, 96%);
+  --neutral-very-light-Grayish-blue: hsl(0, 0%, 98%);
+  --white: hsl(0, 0, 100%);
+  /* font */
+  --pace: 18px;
+  --family: "Public Sans", sans-serif;
+}
 .background {
-  height: 90vh;
-  
-  border-left: 5px solid yellowgreen;
-  border-bottom:5px solid yellowgreen ;
+  background-image: url("./Asset/images/bg-intro-desktop.svg");
 }
 
-.icons{
+.icons {
   display: block;
   width: 4rem;
   height: 4rem;
@@ -22,13 +34,13 @@
   border-radius: 50%;
 }
 
-svg{
+svg {
   color: #fff;
 }
-svg:hover{
+svg:hover {
   color: green;
 }
-.menu{
+.menu {
   font-size: 1.5rem;
   border-radius: 4px;
 }

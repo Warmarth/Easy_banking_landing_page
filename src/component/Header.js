@@ -1,13 +1,9 @@
 import { React, useState } from "react";
 import Menu from "./dbList";
-import { Link } from "react-router-dom";
 import "../App.css";
-import "./header.css";
 import logo from "../Asset/logo.svg";
+import { menuList } from "./data";
 import { CgMenuGridO, CgClose } from "react-icons/cg";
-import Mainbody from "./Mainbody";
-import Mainbody_2 from "./MainBody_2";
-import Mainbody_3 from "./Mainbody_3";
 
 function Header() {
   const [MenuOpen, setIsMenuOpen] = useState(false);
@@ -27,27 +23,20 @@ function Header() {
             {MenuOpen ? <CgClose className="text-red-800" /> : <CgMenuGridO />}
           </button>
         </div>
-        <ul className="nav-links text-md hidden capitalize block md:flex md:items-center justify-between space-x-4 mb-4 mt-4 md:m-2">
-          <li className="hover:border-b-green-900 mx-1 border-b-2   hover:font-bold ">
-            <a href="#about.html">user</a>
-          </li>
-          <li
-            className="hover:border-b-green-900 mx-1 border-b-2   hover:font-bold"
-          >
-            <Link to={Mainbody_2}>dashbord</Link>
-          </li>
-          <li className="hover:border-b-green-900 mx-1  border-b-2   hover:font-bold">
-            <Link to={Mainbody} className="">delivery</Link>
-          </li>
-          <li className="hover:border-b-green-900 mx-1 border-b-2 hover:font-bold">
-            <Link to={Mainbody_3}>about us</Link>
-          </li>
-        </ul>
-        <button className="bg-green-400 hover:bg-green-600 rounded-xl p-2 hover:scale-105 transition hover:font-bold capitalize hidden md:flex ">
+        {MenuOpen && (
+          <div className="absolute w-full  ">{<Menu  />}</div>
+        )}
+        {menuList.map((item, idx) => {
+          return (
+            <div className={`hidden md:flex text-center`} key={idx}>
+              <p className="border-b-2 border-[--primary-limeGreen]">{item}</p>
+            </div>
+          );
+        })}
+        <button className="bg-green-400 hover:bg-green-600 rounded-xl p-2 hover:scale-105 transition capitalize hidden md:flex ">
           request invite
         </button>
       </nav>
-      {MenuOpen && <Menu />}
     </header>
   );
 }
