@@ -13,7 +13,7 @@ function Header() {
 
   return (
     <header className="bg-slate-100 text-center animation top-0 sticky">
-      <nav className=" navBar items-center justify-between p-4 sm:block md:flex cursor-pointer xl:w-10/12 xl:m-auto">
+      <nav className=" items-center justify-between p-4 sm:block md:flex cursor-pointer xl:w-10/12 xl:m-auto">
         <div className="flex justify-between items-center">
           <img src={logo} alt="Logo" className="min-w-min self-center" />
           <button
@@ -23,13 +23,13 @@ function Header() {
             {MenuOpen ? <CgClose className="text-red-800" /> : <CgMenuGridO />}
           </button>
         </div>
-        {MenuOpen && (
-          <div className="absolute w-full  ">{<Menu  />}</div>
-        )}
+        {MenuOpen && <div className="absolute">{<Menu />}</div>}
         {menuList.map((item, idx) => {
           return (
-            <div className={`hidden md:flex text-center`} key={idx}>
-              <p className="border-b-2 border-[--primary-limeGreen]">{item}</p>
+            <div className={`hidden md:flex capitalize`} key={idx}>
+              <p className="hover:border-b-2 hover:border-[--primary-limeGreen]">
+                {item}
+              </p>
             </div>
           );
         })}

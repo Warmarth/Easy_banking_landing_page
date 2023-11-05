@@ -2,8 +2,8 @@ import React from "react";
 import { menuList } from "./data";
 const Menu = () => {
   return (
-    <section className=" ">
-      <ul className="flex items-center justify-center flex-col nav-links text-md capitalize w-full h-[50vh]  md:hidden mb-4 mt-4 animation bg-slate-100">
+    <section className="translate-x-[8rem] translate-y-[4rem]">
+      <ul className="flex items-center justify-center flex-col text-md capitalize w-[20rem] h-[50vh]  md:hidden mb-4 mt-4 animation bg-slate-100 rounded-xl">
         {menuList.map((items, index) => {
           return (
             <li

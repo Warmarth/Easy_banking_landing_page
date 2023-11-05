@@ -9,7 +9,7 @@ const Mainbody_3 = () => {
         <div className="mt-24 mb-10 py-2">
           <h2 className="text-5xl text-center capitalize">latest articles</h2>
         </div>
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-4 justify-around transition gap-x-2">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-4 justify-around transition gap-x-4 ">
           {article.map((item, idx) => {
             return (
               <div className="  bg-slate-100" key={idx}>
