@@ -1,6 +1,5 @@
 import { React, useState } from "react";
 import Menu from "./dbList";
-import "../App.css";
 import logo from "../Asset/logo.svg";
 import { menuList } from "./data";
 import { CgMenuGridO, CgClose } from "react-icons/cg";
@@ -26,10 +25,11 @@ function Header() {
         {MenuOpen && <div className="absolute">{<Menu />}</div>}
         {menuList.map((item, idx) => {
           return (
-            <div className={`hidden md:flex capitalize`} key={idx}>
-              <p className="hover:border-b-2 hover:border-[--primary-limeGreen]">
-                {item}
-              </p>
+            <div
+              className={`hover:border-[--primary-limeGreen] hover:border-b-2 hidden md:flex `}
+              key={idx}
+            >
+              <p className={`mx-[-1rem] capitalize`}>{item}</p>
             </div>
           );
         })}

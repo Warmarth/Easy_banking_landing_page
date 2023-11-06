@@ -1,9 +1,7 @@
-import {
-  FaAccessibleIcon,
-  FaCcMastercard,
-  FaBuyNLarge,
-  FaFingerprint,
-} from "react-icons/fa";
+import api from "../Asset/images/icon-api.svg";
+import budget from "../Asset/images/icon-budgeting.svg";
+import onboarding from "../Asset/images/icon-onboarding.svg";
+import online from "../Asset/images/icon-online.svg";
 import Latest from "../Asset/images/image-confetti.jpg";
 import Latest1 from "../Asset/images/image-currency.jpg";
 import Latest2 from "../Asset/images/image-restaurant.jpg";
@@ -21,22 +19,22 @@ const info = [
   {
     title: "Simple Budgeting",
     content: `See exactly where your money goes each month. Receive notifications when you’re close to hitting your limits.`,
-    icon: <FaAccessibleIcon />,
+    icon: budget,
   },
   {
     title: "Fast Onboarding",
     content: `We don’t do branches. Open your account in minutes online and start taking control of your finances right away.`,
-    icon: <FaCcMastercard />,
+    icon: onboarding,
   },
   {
     title: "Online Banking",
     content: `Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world`,
-    icon: <FaBuyNLarge />,
+    icon: online,
   },
   {
     title: "Open API",
     content: `Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.`,
-    icon: <FaFingerprint />,
+    icon: api,
   },
 ];
 const article = [
@@ -59,7 +57,7 @@ const article = [
     author: " By clarie Hutton",
     title: "Treat yourself without worrying about money",
     content:
-      "                Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you …",
+      "Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you …",
   },
   {
     pic: Latest3,
@@ -80,7 +78,7 @@ const footerContent = {
   headerPage: {
     title: "Next Generation Digital Banking",
     intro:
-      "  Take your financial life online. Your Easybank account will be aone-stop-shop for spending, saving, budgeting, investing, and much       more.",
+      "Take your financial life online. Your Easybank account will be aone-stop-shop for spending, saving, budgeting, investing, and much more.",
   },
 };
 

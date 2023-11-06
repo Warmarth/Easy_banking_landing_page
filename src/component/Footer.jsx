@@ -2,7 +2,6 @@ import { React, Component } from "react";
 import logo from "../Asset/logo.svg";
 import { menuList } from "./data";
 import { footerContent } from "./data";
-import "../App.css";
 
 class Footer extends Component {
   render() {

@@ -17,9 +17,12 @@ const Mainbody_2 = () => {
           {info.map((item, idx) => {
             return (
               <div className="w-6/6 m-auto mb-4 pb-2 " key={idx}>
-                <span className="icons m-auto md:m-1 mb-4 p-5 ">
-                  {item.icon}
-                </span>
+                <img
+                  src={item.icon}
+                  alt={item.title}
+                  className=" m-auto md:m-1 mb-4 p-5 "
+                />
+
                 <article className="mt-4">
                   <h3 className="font-bold mb-4 text-xl">{item.title}</h3>
                   <p className="mr-8 m-auto">{item.content}</p>
