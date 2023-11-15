@@ -4,20 +4,20 @@ import "../App.css";
 
 const Mainbody_3 = () => {
   return (
-    <section>
-      <div className="mb-20">
+    <section className="">
+      <div className="pb-20 w-10/12 mx-auto">
         <div className="mt-24 mb-10 py-2">
           <h2 className="text-5xl text-center capitalize">latest articles</h2>
         </div>
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-4 justify-around transition ">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-4 justify-around gap-x-3 gap-y-3 transition ">
           {article.map((item, idx) => {
             return (
-              <div className="rounded px-[2rem] md:px-2 bg-slate-100" key={idx}>
+              <div className="rounded  bg-slate-100" key={idx}>
                 <div className="">
                   <img
                     src={item.pic}
                     alt={item.title}
-                    className={`w-full h-[20rem]`}
+                    className={`w-full h-[17rem]`}
                   />
                 </div>
                 <article className="p-[1.2rem] mt-[1rem]">
