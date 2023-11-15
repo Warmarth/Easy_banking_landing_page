@@ -35,7 +35,7 @@ function Header() {
             );
           })}{" "}
         </ul>
-        <button className="bg-green-400 hover:bg-green-600 rounded-xl p-2 hover:scale-105 transition capitalize hidden md:flex ">
+        <button className="bg-green-400 hover:bg-green-600 rounded-[2rem] p-2 hover:scale-105 transition capitalize hidden md:flex">
           request invite
         </button>
       </nav>

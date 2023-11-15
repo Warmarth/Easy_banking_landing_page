@@ -15,6 +15,7 @@ import {
 } from "react-icons/fa6";
 
 const menuList = ["home", "about", "contact", "blog", "careers"];
+const footerList=['about us','contact','blog','career','support','privacy policy']
 const info = [
   {
     title: "Simple Budgeting",
@@ -82,4 +83,4 @@ const footerContent = {
   },
 };
 
-export { menuList, info, article, footerContent };
+export { menuList, info, article, footerContent,footerList };
