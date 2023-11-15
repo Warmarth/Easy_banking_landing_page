@@ -23,16 +23,18 @@ function Header() {
           </button>
         </div>
         {MenuOpen && <div className="absolute">{<Menu />}</div>}
-        {menuList.map((item, idx) => {
-          return (
-            <div
-              className={`hover:border-[--primary-limeGreen] hover:border-b-2 hidden md:flex `}
-              key={idx}
-            >
-              <p className={`mx-[-1rem] capitalize`}>{item}</p>
-            </div>
-          );
-        })}
+        <ul className={` hidden md:flex h-[2rem]`}>
+          {menuList.map((item, idx) => {
+            return (
+              <li
+                key={idx}
+                className={`mx-[1rem] hover:border-[--primary-limeGreen] hover:border-b-4 h-full capitalize`}
+              >
+                {item}
+              </li>
+            );
+          })}{" "}
+        </ul>
         <button className="bg-green-400 hover:bg-green-600 rounded-xl p-2 hover:scale-105 transition capitalize hidden md:flex ">
           request invite
         </button>

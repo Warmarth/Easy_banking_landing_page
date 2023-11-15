@@ -8,7 +8,7 @@ const Menu = () => {
         {menuList.map((items, index) => {
           return (
             <li
-              className={`hover:border-[--primary-limeGreen] my-1  hover:border-b-2 hover:scale-130`}
+              className={`hover:border-[--primary-limeGreen] border-transparent my-3  border-b-4 hover:scale-130`}
               key={index}
             >
               <p>{items}</p>
