@@ -4,7 +4,7 @@ import { menuList } from "./data";
 const Menu = () => {
   return (
     <section className="translate-x-[8rem] translate-y-[4rem] shadow-2xl">
-      <ul className="flex items-center text-[--primary-grayishBlue] justify-center flex-col text-md capitalize w-[20rem] h-[50vh]  md:hidden mb-4 mt-4 animation rounded-xl bg-slate-50 shadow">
+      <ul className="flex items-center text-[--primary-grayishBlue] justify-center flex-col text-md capitalize w-[25rem] h-[50vh]  md:hidden mb-4 mt-4 animation rounded-xl bg-slate-50 shadow">
         {menuList.map((items, index) => {
           return (
             <li
