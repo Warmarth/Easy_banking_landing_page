@@ -12,7 +12,7 @@ function Header() {
 
   return (
     <header className="bg-slate-100 text-center animation top-0 sticky">
-      <nav className=" items-center justify-between p-4 sm:block md:flex cursor-pointer xl:w-10/12 xl:m-auto">
+      <nav className=" items-center justify-between h-[4rem] sm:block md:flex cursor-pointer xl:w-10/12 xl:m-auto border">
         <div className="flex justify-between items-center">
           <img src={logo} alt="Logo" className="min-w-min self-center" />
           <button
@@ -28,7 +28,7 @@ function Header() {
             return (
               <li
                 key={idx}
-                className={`mx-[1rem] hover:border-[--primary-limeGreen] hover:border-b-4 h-full capitalize`}
+                className={`mx-[1rem] hover:border-[--primary-limeGreen] hover:border-b-[.3rem] rounded h-[3rem] capitalize`}
               >
                 {item}
               </li>
