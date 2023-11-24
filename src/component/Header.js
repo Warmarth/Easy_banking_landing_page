@@ -12,8 +12,8 @@ function Header() {
 
   return (
     <header className="bg-slate-100 text-center animation top-0 sticky">
-      <nav className=" items-center justify-between h-[4rem] sm:block md:flex cursor-pointer xl:w-10/12 xl:m-auto border">
-        <div className="flex justify-between items-center">
+      <nav className=" items-center justify-between h-[4rem] sm:block md:flex cursor-pointer xl:w-10/12 xl:m-auto">
+        <div className="flex justify-between items-center p-4 md:pt-0">
           <img src={logo} alt="Logo" className="min-w-min self-center" />
           <button
             className="menu bg-indigo-300 font-3xl md:hidden"
